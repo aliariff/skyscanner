@@ -28,11 +28,11 @@ nightmare
         var price = $('.day-list-item').find('.mainquote-price')[0].text
         result['airline'] = airline
         result['price'] = price
-        result['date'] = date
         return result
     })
     .end()
     .then(function(result) {
+        result['date'] = date
         console.log(JSON.stringify(result))
     })
     .catch(function(error) {
