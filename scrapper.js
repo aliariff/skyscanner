@@ -7,12 +7,13 @@ if (args.length === 2) {
 
 var Nightmare = require('nightmare')
 var nightmare = Nightmare({
-    waitTimeout: 120000,
-    show: false
+    waitTimeout: 60000,
+    show: true
 })
 var from = 'cgk'
 var to = 'fran'
-var url = 'https://www.skyscanner.co.id/transportasi/penerbangan/' + from + '/' + to + '/' + args[2]
+var date = args[2]
+var url = 'https://www.skyscanner.co.id/transportasi/penerbangan/' + from + '/' + to + '/' + date
 console.log('Loading ' + url)
 
 nightmare
@@ -27,6 +28,7 @@ nightmare
         var price = $('.day-list-item').find('.mainquote-price')[0].text
         result['airline'] = airline
         result['price'] = price
+        result['date'] = date
         return result
     })
     .end()
