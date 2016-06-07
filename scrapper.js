@@ -8,7 +8,7 @@ if (args.length === 2) {
 var Nightmare = require('nightmare')
 var nightmare = Nightmare({
     waitTimeout: 60000,
-    show: true
+    show: false
 })
 var from = 'cgk'
 var to = 'fran'
