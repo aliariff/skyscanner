@@ -1,0 +1,23 @@
+{
+  "name": "skyscanner",
+  "version": "1.0.0",
+  "description": "Scrap airfares from skyscanner",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliariff/skyscanner.git"
+  },
+  "author": "Ali Ariff",
+  "bugs": {
+    "url": "https://github.com/aliariff/skyscanner/issues"
+  },
+  "homepage": "https://github.com/aliariff/skyscanner#readme",
+  "dependencies": {
+    "nightmare": "^2.5.0"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}
