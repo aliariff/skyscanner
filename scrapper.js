@@ -24,8 +24,8 @@ nightmare
     })
     .evaluate(function() {
         var result = {}
-        var airline = $('.day-list-item').find('.big-airline img').attr('alt')
-        var price = $('.day-list-item').find('.mainquote-price')[0].text
+        var airline = $('.day-list-item').first().find('.airline').text()
+        var price = $('.day-list-item').first().find('.mainquote-price').text()
         result['airline'] = airline
         result['price'] = price
         return result
